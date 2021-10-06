@@ -1,17 +1,25 @@
 <section class="container">
   <header class="header__container">
-    <h1 class="header__container-title">Bin2Dec</h1>
+    <span class="header__container-title">Bin</span>
+    <span class="header__container-title">2Dec</span>
   </header>
-    <div>
+  <main class="body__container">
+    <div class="body__description">
       <h3>Converta seus valores binários para decimais de uma forma mais simples e rápida</h3>
     </div>
-  <main>
-    <div>
-      <input type="text"/>
-    </div>
-    <div>
-      <h3>Seu resultado: </h3>
-      <span>01</span>
+    <div class="body__wrapper">
+      <div class="camp">
+        <div class="camp__values">
+          <label>Binário</label>
+          <input class="body__input-value" type="number" required=""/>
+        </div>
+        <div class="divider"></div>
+        <div class="camp__values">
+          <label>Decimal</label>
+          <p class="body__result-value"> 30</p>
+        </div>
+      </div>
+      <button class="button-converter">Converter</button>
     </div>
   </main>
 </section>

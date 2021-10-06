@@ -36,30 +36,86 @@
     }
 
     .body__wrapper {
-      width: 100%;
+
       display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-bottom: 1rem;
+      flex-direction: column;
+      align-items:center;
 
+      .divider {
+        height: 1rem;
+        width: 0.2rem;
+        margin: 25px 10px 0;
+        background: #E2E8F0;
+      }
 
-      .body__input-value {
-        padding:0.6rem;
-        margin-right: 0.5rem;
-        border-radius: 1rem;
-        border: 2px solid #E2E8F0;
-        transition: all 0.2s cubic-bezier(.64,.09,.08,1);
-        background: linear-gradient(rgba(0, 0, 0, 1));
-        background-repeat: no-repeat;
-        background-position: -200px 0;
+      .camp {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
 
-        &:focus, &:valid {
-          background: #F7FAFC;
-          background-position: 0 0;
+        .camp__values {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .body__input-value {
+            padding:0.6rem;
+            border-radius: 1rem;
+            border: 2px solid #E2E8F0;
+            transition: all 0.2s cubic-bezier(.64,.09,.08,1);
+            background: linear-gradient(rgba(0, 0, 0, 1));
+            background-repeat: no-repeat;
+            background-position: -200px 0;
+            font-weight: 600;
+            text-align: center;
+            font-size: 1.5rem;
+            width: 14rem;
+
+            &:focus, &:valid {
+              background: #F7FAFC;
+              background-position: 0 0;
+            }
+
+            &:focus-visible {
+              outline: none;
+            }
+          }
+          .body__result-value {
+            font-size: 1.5rem;
+            padding: 0.5rem;
+            width: 10rem;
+            border-radius: 1rem;
+            border: 2px solid #E2E8F0;
+            text-align: right;
+
+          }
         }
+      }
+      .button-converter {
+        padding: 0.5rem;
+        border-radius: 0.4rem;
+        width: 10rem;
 
-        &:focus-visible {
-          outline: none;
+        font-weight: bold;
+        font-family: 1rem;
+        color: white;
+        font-size: 1rem;
+
+
+        background: #1A202C;
+        border: none;
+        cursor: pointer;
+
+        transition: all 0.3s;
+
+
+        &:focus {
+          border: none;
+        }
+        &:hover {
+          transform: translateY(-0.2rem);
         }
       }
     }

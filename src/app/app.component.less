@@ -45,6 +45,7 @@
         height: 1rem;
         width: 0.2rem;
         margin: 25px 10px 0;
+
         background: #E2E8F0;
       }
 
@@ -61,17 +62,20 @@
           align-items: center;
 
           .body__input-value {
+            width: 14rem;
             padding:0.6rem;
             border-radius: 1rem;
+
             border: 2px solid #E2E8F0;
-            transition: all 0.2s cubic-bezier(.64,.09,.08,1);
             background: linear-gradient(rgba(0, 0, 0, 1));
             background-repeat: no-repeat;
             background-position: -200px 0;
+
             font-weight: 600;
             text-align: center;
             font-size: 1.5rem;
-            width: 14rem;
+
+            transition: all 0.2s cubic-bezier(.64,.09,.08,1);
 
             &:focus, &:valid {
               background: #F7FAFC;
@@ -83,13 +87,13 @@
             }
           }
           .body__result-value {
-            font-size: 1.5rem;
+            min-width: 13rem;
             padding: 0.5rem;
-            width: 10rem;
             border-radius: 1rem;
             border: 2px solid #E2E8F0;
-            text-align: right;
 
+            font-size: 1.5rem;
+            text-align: right;
           }
         }
       }

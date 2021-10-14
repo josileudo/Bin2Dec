@@ -11,15 +11,22 @@
       <div class="camp">
         <div class="camp__values">
           <label>Binário</label>
-          <input class="body__input-value" type="number" required=""/>
+          <input
+            class="body__input-value"
+            type="number"
+            (click)="formatInput()"
+            #binaryNumber
+            required=""
+            [(ngModel)]="binaryValue"
+          />
         </div>
         <div class="divider"></div>
         <div class="camp__values">
           <label>Decimal</label>
-          <p class="body__result-value"> 30</p>
+          <p class="body__result-value">{{decimalValue}}</p>
         </div>
       </div>
-      <button class="button-converter">Converter</button>
+      <button class="button-converter" (click)="convertValues(binaryNumber.value)">Converter</button>
     </div>
   </main>
 </section>
